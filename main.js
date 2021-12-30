@@ -10,7 +10,7 @@ var tool = new Tool();
 
 tool.onMouseDown = function(event){
     var c = Shape.Circle(event.point,  20)
-    c.fillColor = 'yellow';
+    c.fillColor = 'red';
 }
 
 paper.view.draw();
