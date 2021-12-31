@@ -14,10 +14,10 @@ function selectColor(event) {
     return;
   }
 
-  const selectedColor = event.target.dataset.color;
-  var tool = new Tool();
-var c;
-tool.onMouseDrag = function(event){
+    const selectedColor = event.target.dataset.color;
+    var tool = new Tool();
+    var c;
+    tool.onMouseDrag = function(event){
     c = Shape.Circle(event.point,  20)
     c.fillColor = selectedColor;
 }
