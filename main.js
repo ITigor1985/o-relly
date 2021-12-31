@@ -5,6 +5,8 @@ $(document).ready(function(){
 paper.install(window);
 paper.setup(document.getElementById('mainCanvas'));
 
+var tool = new Tool();
+
 const colorPalette = document.querySelector(".color-palette");
   colorPalette.addEventListener("click", selectColor);
 
@@ -15,7 +17,7 @@ function selectColor(event) {
   }
 
     const selectedColor = event.target.dataset.color;
-    var tool = new Tool();
+    
     var c;
     tool.onMouseDrag = function(event){
     c = Shape.Circle(event.point,  20)
