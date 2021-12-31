@@ -6,12 +6,12 @@ paper.install(window);
 paper.setup(document.getElementById('mainCanvas'));
 const btnClear = document.querySelector(".clear");
 
-
+const color = getRangomColor();
 var tool = new Tool();
 var c;
 tool.onMouseDrag = function(event){
     c = Shape.Circle(event.point,  20)
-    c.fillColor = getRangomColor;
+    c.fillColor = color;
 }
 function getRangomColor() {
     return `#${getRandomHex()}${getRandomHex()}${getRandomHex()}`;
