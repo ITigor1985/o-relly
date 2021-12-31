@@ -43,7 +43,7 @@ function createPaletteItems() {
   colorPalette.append(...items);
 }
 
-const color = getRangomColor();
+
 
 function getRangomColor() {
     return `#${getRandomHex()}${getRandomHex()}${getRandomHex()}`;
