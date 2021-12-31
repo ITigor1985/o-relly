@@ -18,7 +18,7 @@ function selectColor(event) {
 
     const selectedColor = event.target.dataset.color;
     
-    var c;
+    let c;
     tool.onMouseDrag = function(event){
     c = Shape.Circle(event.point,  20)
     c.fillColor = selectedColor;
